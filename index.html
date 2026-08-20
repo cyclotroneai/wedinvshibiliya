@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>Shibili & Liya — Nikkah Invitation | 19 December 2026</title>
+<meta name="description" content="With joyful hearts, Shibili & Liya invite you to celebrate their Nikkah on 19 December 2026 at Akbar Convention Center.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Marcellus&family=Jost:wght@300;400;500;600&family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#F8F4EC;
+  --ivory-deep:#F1EBDD;
+  --gold:#C9A86A;
+  --gold-soft:#E4D3AE;
+  --emerald:#183C32;
+  --emerald-soft:#25493D;
+  --sage:#A9B8A7;
+  --text:#25231F;
+  --text-soft:#5C574C;
+  --white:#FFFFFF;
+  --font-display:'Cormorant Garamond', serif;
+  --font-section:'Marcellus', serif;
+  --font-body:'Jost', sans-serif;
+  --font-arabic:'Amiri', serif;
+  --font-arabic-deco:'Aref Ruqaa', serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--ivory);
+  color:var(--text);
+  font-family:var(--font-body);
+  overflow-x:hidden;
+  line-height:1.6;
+}
+img{max-width:100%;display:block;}
+button{font-family:inherit;cursor:pointer;}
+a{text-decoration:none;color:inherit;}
+::selection{background:var(--gold-soft);color:var(--emerald);}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
+}
+
+/* ---------- Utility ---------- */
+.container{max-width:1180px;margin:0 auto;padding:0 24px;}
+.eyebrow{
+  font-family:var(--font-body);
+  letter-spacing:.32em;
+  text-transform:uppercase;
+  font-size:11.5px;
+  color:var(--gold);
+  font-weight:500;
+}
+.divider-line{
+  width:64px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  margin:18px auto;
+}
+.reveal{opacity:0;transform:translateY(36px);transition:opacity 1.1s var(--ease), transform 1.1s var(--ease);}
+.reveal.in-view{opacity:1;transform:translateY(0);}
+.reveal-scale{opacity:0;transform:scale(.94);transition:opacity 1.1s var(--ease), transform 1.1s var(--ease);}
+.reveal-scale.in-view{opacity:1;transform:scale(1);}
+.stagger > *{opacity:0;transform:translateY(24px);transition:opacity .9s var(--ease), transform .9s var(--ease);}
+.stagger.in-view > *{opacity:1;transform:translateY(0);}
+.stagger.in-view > *:nth-child(1){transition-delay:.05s;}
+.stagger.in-view > *:nth-child(2){transition-delay:.18s;}
+.stagger.in-view > *:nth-child(3){transition-delay:.31s;}
+.stagger.in-view > *:nth-child(4){transition-delay:.44s;}
+.stagger.in-view > *:nth-child(5){transition-delay:.57s;}
+.stagger.in-view > *:nth-child(6){transition-delay:.70s;}
+
+section{position:relative;padding:120px 0;}
+@media(max-width:768px){section{padding:80px 0;}}
+
+.section-heading{
+  font-family:var(--font-display);
+  font-weight:500;
+  font-size:clamp(30px,4.2vw,52px);
+  color:var(--emerald);
+  text-align:center;
+  letter-spacing:.01em;
+}
+.section-sub{
+  text-align:center;
+  max-width:560px;
+  margin:0 auto;
+  color:var(--text-soft);
+  font-size:16px;
+  font-weight:300;
+}
+
+/* ---------- Islamic geometric pattern (signature backdrop) ---------- */
+.geo-pattern{
+  position:absolute;inset:0;
+  opacity:.05;
+  pointer-events:none;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%23183C32' stroke-width='0.8'%3E%3Cpath d='M60 6 L94 30 L94 90 L60 114 L26 90 L26 30 Z'/%3E%3Cpath d='M60 6 L60 114 M26 30 L94 90 M94 30 L26 90'/%3E%3Ccircle cx='60' cy='60' r='18'/%3E%3C/g%3E%3C/svg%3E");
+  background-size:120px 120px;
+}
+
+/* ---------- Floating particles ---------- */
+.particles{position:absolute;inset:0;overflow:hidden;pointer-events:none;}
+.particle{
+  position:absolute;
+  border-radius:50%;
+  background:var(--gold);
+  opacity:.35;
+  animation:drift linear infinite;
+}
+@keyframes drift{
+  0%{transform:translateY(0) translateX(0);opacity:0;}
+  10%{opacity:.4;}
+  90%{opacity:.3;}
+  100%{transform:translateY(-120vh) translateX(30px);opacity:0;}
+}
+
+/* ---------- Signature heart-star glyph ---------- */
+.heart-glyph{width:34px;height:34px;display:inline-block;}
+.heart-glyph path{
+  fill:none;
+  stroke:var(--gold);
+  stroke-width:1.4;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-dasharray:210;
+  stroke-dashoffset:210;
+  animation:draw-heart 2.6s var(--ease) forwards, pulse-heart 3.2s ease-in-out 2.6s infinite;
+}
+@keyframes draw-heart{to{stroke-dashoffset:0;}}
+@keyframes pulse-heart{
+  0%,100%{transform:scale(1);}
+  50%{transform:scale(1.12);}
+}
+.heart-glyph.filled path{fill:var(--gold);fill-opacity:.12;}
+
+/* ============ NAV ============ */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:200;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:22px 40px;
+  transition:background .5s var(--ease), padding .5s var(--ease), box-shadow .5s var(--ease);
+}
+.nav.scrolled{
+  background:rgba(248,244,236,.86);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  padding:14px 40px;
+  box-shadow:0 8px 30px rgba(24,60,50,.06);
+}
+.nav-logo{
+  font-family:var(--font-display);
+  font-size:22px;
+  color:var(--emerald);
+  letter-spacing:.04em;
+}
+.nav-logo span{color:var(--gold);}
+.nav-links{display:flex;gap:38px;list-style:none;}
+.nav-links a{
+  font-size:13px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--text);font-weight:500;
+  position:relative;padding-bottom:4px;
+}
+.nav-links a::after{
+  content:'';position:absolute;left:0;bottom:0;width:0;height:1px;
+  background:var(--gold);transition:width .4s var(--ease);
+}
+.nav-links a:hover::after{width:100%;}
+.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:6px;z-index:210;}
+.nav-toggle span{width:24px;height:1.5px;background:var(--emerald);transition:all .35s var(--ease);}
+.nav-toggle.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
+.nav-toggle.open span:nth-child(2){opacity:0;}
+.nav-toggle.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
+
+.mobile-menu{
+  position:fixed;inset:0;background:var(--ivory);z-index:190;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px;
+  transform:translateY(-100%);transition:transform .55s var(--ease);
+}
+.mobile-menu.open{transform:translateY(0);}
+.mobile-menu a{font-family:var(--font-display);font-size:28px;color:var(--emerald);}
+
+@media(max-width:900px){
+  .nav-links{display:none;}
+  .nav-toggle{display:flex;}
+  .nav{padding:18px 24px;}
+}
+
+/* ============ HERO ============ */
+.hero{
+  min-height:100vh;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;
+  position:relative;
+  padding:140px 20px 60px;
+  background:
+    radial-gradient(ellipse at 30% 15%, rgba(201,168,106,.14), transparent 55%),
+    radial-gradient(ellipse at 75% 85%, rgba(24,60,50,.07), transparent 55%),
+    var(--ivory);
+}
+.hero-bismillah{
+  font-family:var(--font-arabic);
+  font-size:clamp(24px,3.4vw,36px);
+  color:var(--emerald);
+  margin-bottom:26px;
+  opacity:0;animation:fadeUp 1.4s var(--ease) .2s forwards;
+}
+.hero-together{
+  font-size:13px;letter-spacing:.32em;text-transform:uppercase;color:var(--text-soft);
+  opacity:0;animation:fadeUp 1.4s var(--ease) .5s forwards;
+}
+.hero-names{
+  display:flex;align-items:center;justify-content:center;gap:26px;
+  margin:20px 0 8px;
+  flex-wrap:wrap;
+}
+.hero-name{
+  font-family:var(--font-display);
+  font-weight:500;
+  font-size:clamp(52px,11vw,128px);
+  color:var(--emerald);
+  letter-spacing:.03em;
+  line-height:1;
+  opacity:0;
+}
+.hero-name.groom{animation:fadeUp 1.5s var(--ease) .75s forwards;}
+.hero-name.bride{animation:fadeUp 1.5s var(--ease) 1s forwards;}
+.hero-heart-wrap{opacity:0;animation:fadeUp 1.5s var(--ease) .9s forwards;}
+.hero-line{
+  font-family:var(--font-display);font-style:italic;
+  font-size:clamp(16px,2vw,20px);
+  color:var(--text-soft);
+  max-width:480px;margin:28px auto 0;
+  opacity:0;animation:fadeUp 1.4s var(--ease) 1.3s forwards;
+}
+.hero-date-block{
+  margin-top:44px;
+  opacity:0;animation:fadeUp 1.4s var(--ease) 1.55s forwards;
+}
+.hero-date{
+  font-family:var(--font-section);
+  font-size:clamp(24px,3vw,32px);
+  letter-spacing:.18em;
+  color:var(--gold);
+}
+.hero-nikkah-time{
+  margin-top:6px;
+  font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--text-soft);
+}
+.hero-cta{
+  margin-top:42px;
+  opacity:0;animation:fadeUp 1.4s var(--ease) 1.8s forwards;
+}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:16px 38px;
+  border:1px solid var(--emerald);
+  background:transparent;
+  color:var(--emerald);
+  font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:500;
+  border-radius:2px;
+  transition:background .45s var(--ease), color .45s var(--ease), box-shadow .45s var(--ease), transform .3s var(--ease);
+}
+.btn:hover{background:var(--emerald);color:var(--ivory);box-shadow:0 10px 28px rgba(24,60,50,.22);transform:translateY(-2px);}
+.btn-gold{border-color:var(--gold);color:var(--emerald);background:var(--gold-soft);}
+.btn-gold:hover{background:var(--gold);color:var(--white);}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(26px);}to{opacity:1;transform:translateY(0);}}
+
+.scroll-indicator{
+  position:absolute;bottom:36px;left:50%;transform:translateX(-50%);
+  display:flex;flex-direction:column;align-items:center;gap:10px;
+  opacity:0;animation:fadeUp 1.2s var(--ease) 2.2s forwards;
+}
+.scroll-indicator span{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--text-soft);}
+.scroll-line{width:1px;height:36px;background:linear-gradient(var(--gold),transparent);position:relative;overflow:hidden;}
+.scroll-line::after{
+  content:'';position:absolute;top:-100%;left:0;width:100%;height:100%;background:var(--emerald);
+  animation:scrollMove 1.8s ease-in-out infinite;
+}
+@keyframes scrollMove{50%{top:100%;}100%{top:100%;}}
+
+/* ============ COUNTDOWN ============ */
+.countdown-section{
+  background:var(--emerald);
+  color:var(--ivory);
+  text-align:center;
+  overflow:hidden;
+}
+.countdown-section .eyebrow{color:var(--gold-soft);}
+.countdown-title{
+  font-family:var(--font-display);font-weight:500;
+  font-size:clamp(28px,4vw,44px);
+  margin:14px 0 50px;
+  letter-spacing:.04em;
+}
+.countdown-grid{
+  display:flex;justify-content:center;gap:clamp(14px,3vw,42px);
+  flex-wrap:wrap;
+}
+.count-unit{
+  min-width:104px;
+}
+.count-value{
+  font-family:var(--font-display);
+  font-size:clamp(44px,7vw,80px);
+  font-weight:500;
+  color:var(--white);
+  line-height:1;
+  position:relative;
+  height:1.05em;
+  overflow:hidden;
+}
+.count-digit{
+  display:inline-block;
+  transition:transform .5s var(--ease);
+}
+.count-label{
+  margin-top:14px;
+  font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--sage);
+}
+.count-sep{
+  font-family:var(--font-display);font-size:clamp(30px,5vw,56px);color:var(--gold);
+  align-self:flex-start;margin-top:2px;
+  display:none;
+}
+@media(min-width:640px){.count-sep{display:block;}}
+
+/* ============ WELCOME ============ */
+.welcome{text-align:center;}
+.welcome-msg{
+  max-width:640px;margin:26px auto 0;
+  font-family:var(--font-display);font-style:italic;
+  font-size:clamp(18px,2.3vw,24px);
+  color:var(--text-soft);
+  line-height:1.75;
+}
+
+/* ============ QURAN VERSE ============ */
+.verse-section{
+  background:var(--ivory-deep);
+  text-align:center;
+  position:relative;
+}
+.verse-arabic{
+  font-family:var(--font-arabic-deco);
+  font-size:clamp(30px,5vw,54px);
+  color:var(--emerald);
+  margin:30px 0 22px;
+  direction:rtl;
+}
+.verse-en{
+  font-family:var(--font-display);font-style:italic;
+  font-size:clamp(20px,2.6vw,30px);
+  color:var(--text);
+  max-width:520px;margin:0 auto;
+}
+.verse-ref{
+  margin-top:16px;
+  font-size:13px;letter-spacing:.15em;color:var(--gold);text-transform:uppercase;
+}
+
+/* ============ JOURNEY TIMELINE ============ */
+.journey{position:relative;}
+.timeline{
+  max-width:720px;margin:70px auto 0;position:relative;
+}
+.timeline-track{
+  position:absolute;left:24px;top:0;bottom:0;width:1px;
+  background:linear-gradient(var(--gold-soft), var(--sage));
+}
+@media(min-width:768px){.timeline-track{left:50%;transform:translateX(-50%);}}
+.timeline-heart{
+  position:absolute;left:24px;top:0;transform:translate(-50%,-50%);
+  width:30px;height:30px;
+  transition:top .1s linear;
+  z-index:2;
+}
+@media(min-width:768px){.timeline-heart{left:50%;}}
+.timeline-item{
+  position:relative;
+  padding:0 0 70px 64px;
+}
+@media(min-width:768px){
+  .timeline-item{width:50%;padding:0 0 90px 0;}
+  .timeline-item:nth-child(odd){padding-right:64px;text-align:right;}
+  .timeline-item:nth-child(even){margin-left:50%;padding-left:64px;}
+}
+.timeline-dot{
+  position:absolute;left:24px;top:6px;transform:translateX(-50%);
+  width:9px;height:9px;border-radius:50%;background:var(--gold);
+  box-shadow:0 0 0 5px var(--ivory), 0 0 0 6px var(--sage);
+}
+@media(min-width:768px){
+  .timeline-item:nth-child(odd) .timeline-dot{left:auto;right:-4.5px;transform:none;}
+  .timeline-item:nth-child(even) .timeline-dot{left:-4.5px;transform:none;}
+}
+.timeline-year{
+  font-family:var(--font-section);color:var(--gold);font-size:13px;letter-spacing:.16em;text-transform:uppercase;
+}
+.timeline-title{
+  font-family:var(--font-display);font-size:26px;color:var(--emerald);margin:8px 0 10px;font-weight:500;
+}
+.timeline-text{color:var(--text-soft);font-size:15px;max-width:340px;}
+@media(min-width:768px){
+  .timeline-item:nth-child(odd) .timeline-text{margin-left:auto;}
+}
+
+/* ============ WEDDING DETAILS ============ */
+.details-section{
+  background:var(--emerald);
+  position:relative;
+  overflow:hidden;
+}
+.details-card{
+  max-width:520px;margin:60px auto 0;
+  background:rgba(248,244,236,.06);
+  border:1px solid rgba(201,168,106,.35);
+  backdrop-filter:blur(6px);
+  border-radius:4px;
+  padding:56px 40px;
+  text-align:center;
+  color:var(--ivory);
+}
+.details-card .eyebrow{color:var(--gold);}
+.details-event{
+  font-family:var(--font-display);font-size:clamp(34px,4.4vw,48px);color:var(--white);margin:12px 0 26px;font-weight:500;
+}
+.details-row{margin-bottom:18px;}
+.details-row .big{
+  font-family:var(--font-display);font-size:24px;color:var(--gold-soft);
+}
+.details-row .small{
+  font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);margin-top:4px;
+}
+.details-venue{
+  margin-top:22px;padding-top:26px;border-top:1px solid rgba(201,168,106,.25);
+  font-family:var(--font-section);font-size:19px;color:var(--ivory);
+}
+.map-link{
+  margin-top:24px;
+  display:inline-flex;align-items:center;gap:8px;
+  color:var(--gold-soft);font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;
+  border-bottom:1px solid rgba(201,168,106,.4);padding-bottom:4px;
+  transition:color .35s var(--ease), border-color .35s var(--ease), gap .35s var(--ease);
+}
+.map-link:hover{color:var(--white);border-color:var(--gold);gap:12px;}
+
+/* ============ COUPLE ============ */
+.couple-section{text-align:center;}
+.couple-names{
+  font-family:var(--font-display);font-size:clamp(38px,6vw,64px);color:var(--emerald);font-weight:500;margin:18px 0;
+}
+.couple-quote{
+  font-family:var(--font-display);font-style:italic;color:var(--text-soft);font-size:19px;max-width:420px;margin:0 auto 50px;
+}
+.photo-frame{
+  max-width:420px;margin:0 auto;
+  aspect-ratio:4/5;
+  border-radius:8px;
+  border:1px solid var(--gold-soft);
+  background:
+    linear-gradient(155deg, var(--ivory-deep), var(--white));
+  display:flex;align-items:center;justify-content:center;
+  flex-direction:column;gap:14px;
+  box-shadow:0 30px 60px -20px rgba(24,60,50,.18);
+  position:relative;
+  overflow:hidden;
+}
+.photo-frame::before{
+  content:'';position:absolute;inset:14px;border:1px solid rgba(201,168,106,.4);border-radius:4px;pointer-events:none;
+}
+.photo-frame .ph-icon{opacity:.5;}
+.photo-frame p{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-soft);opacity:.7;}
+
+/* ============ INVITATION MESSAGE ============ */
+.invite-section{
+  background:var(--ivory-deep);
+  text-align:center;
+}
+.invite-main{
+  font-family:var(--font-display);font-weight:500;
+  font-size:clamp(24px,3.6vw,38px);
+  color:var(--emerald);
+  max-width:640px;margin:0 auto;line-height:1.5;
+}
+.invite-sub{
+  margin-top:26px;
+  font-size:16px;color:var(--text-soft);
+  font-style:italic;font-family:var(--font-display);
+}
+
+/* ============ GALLERY ============ */
+.gallery-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:60px;
+}
+@media(max-width:768px){.gallery-grid{grid-template-columns:repeat(2,1fr);gap:12px;}}
+.gallery-item{
+  aspect-ratio:1/1.15;
+  border-radius:6px;
+  overflow:hidden;
+  position:relative;
+  background:linear-gradient(150deg,var(--ivory-deep),var(--sage) 180%);
+  display:flex;align-items:center;justify-content:center;
+  border:1px solid rgba(201,168,106,.25);
+  transition:transform .6s var(--ease), box-shadow .6s var(--ease);
+}
+.gallery-item:hover{transform:translateY(-6px) scale(1.02);box-shadow:0 24px 40px -18px rgba(24,60,50,.28);}
+.gallery-item svg{width:34%;opacity:.35;transition:transform .8s var(--ease), opacity .5s var(--ease);}
+.gallery-item:hover svg{transform:scale(1.15) rotate(4deg);opacity:.55;}
+.gallery-item span{
+  position:absolute;bottom:14px;left:0;right:0;text-align:center;
+  font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--emerald);opacity:.55;
+}
+
+/* ============ RSVP ============ */
+.rsvp-section{
+  background:var(--emerald);
+  text-align:center;
+  color:var(--ivory);
+}
+.rsvp-section .eyebrow{color:var(--gold);}
+.rsvp-title{font-family:var(--font-display);font-weight:500;font-size:clamp(30px,4.2vw,46px);margin:12px 0 14px;color:var(--white);}
+.rsvp-sub{color:var(--sage);max-width:440px;margin:0 auto 50px;font-weight:300;}
+.rsvp-card{
+  max-width:560px;margin:0 auto;
+  background:rgba(248,244,236,.05);
+  border:1px solid rgba(201,168,106,.3);
+  border-radius:6px;
+  padding:44px 34px;
+  text-align:left;
+}
+.form-row{margin-bottom:22px;}
+.form-row label{
+  display:block;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:9px;
+}
+.form-row input, .form-row textarea{
+  width:100%;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(201,168,106,.3);
+  border-radius:3px;
+  padding:14px 16px;
+  color:var(--ivory);
+  font-family:var(--font-body);
+  font-size:15px;
+  transition:border-color .35s var(--ease), background .35s var(--ease);
+}
+.form-row input::placeholder, .form-row textarea::placeholder{color:rgba(248,244,236,.35);}
+.form-row input:focus, .form-row textarea:focus{
+  outline:none;border-color:var(--gold);background:rgba(255,255,255,.07);
+}
+.attend-options{display:flex;gap:14px;flex-wrap:wrap;}
+.attend-btn{
+  flex:1;min-width:170px;
+  padding:15px 12px;
+  border:1px solid rgba(201,168,106,.35);
+  border-radius:3px;
+  background:transparent;
+  color:var(--ivory);
+  font-size:13px;letter-spacing:.08em;
+  transition:all .35s var(--ease);
+}
+.attend-btn.selected{background:var(--gold);border-color:var(--gold);color:var(--emerald);font-weight:600;}
+.rsvp-submit{
+  width:100%;margin-top:8px;
+  padding:17px;
+  background:var(--gold);
+  border:none;border-radius:3px;
+  color:var(--emerald);
+  font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;
+  transition:background .35s var(--ease), transform .3s var(--ease);
+}
+.rsvp-submit:hover{background:var(--white);transform:translateY(-2px);}
+.rsvp-confirm{
+  display:none;text-align:center;padding:20px 0 4px;
+  font-family:var(--font-display);font-size:20px;color:var(--gold-soft);
+}
+.rsvp-confirm.show{display:block;animation:fadeUp .8s var(--ease);}
+
+/* ============ FINAL SECTION ============ */
+.final-section{
+  min-height:88vh;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;
+  position:relative;
+  background:radial-gradient(ellipse at center, #1f4a3d, var(--emerald) 70%);
+  color:var(--ivory);
+  overflow:hidden;
+}
+.final-names{
+  font-family:var(--font-display);font-weight:500;
+  font-size:clamp(40px,7vw,84px);
+  color:var(--white);
+  letter-spacing:.02em;
+}
+.final-date{
+  margin-top:16px;
+  font-family:var(--font-section);
+  font-size:clamp(18px,2.2vw,24px);
+  letter-spacing:.24em;color:var(--gold);
+}
+.final-bismillah{
+  margin-top:46px;
+  font-family:var(--font-display);font-style:italic;
+  font-size:clamp(18px,2.4vw,26px);color:var(--sage);
+}
+.final-dua{
+  margin-top:14px;
+  font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:rgba(248,244,236,.6);
+}
+.glow-particles{position:absolute;inset:0;pointer-events:none;}
+.glow{
+  position:absolute;border-radius:50%;
+  background:radial-gradient(circle, rgba(201,168,106,.5), transparent 70%);
+  filter:blur(2px);
+  animation:glowFloat 8s ease-in-out infinite;
+}
+@keyframes glowFloat{
+  0%,100%{transform:translateY(0);opacity:.5;}
+  50%{transform:translateY(-30px);opacity:1;}
+}
+
+/* ============ FOOTER ============ */
+footer{
+  background:var(--ivory-deep);
+  text-align:center;
+  padding:50px 20px;
+  color:var(--text-soft);
+}
+footer .foot-names{font-family:var(--font-display);font-size:20px;color:var(--emerald);}
+footer .foot-date{font-size:12px;letter-spacing:.14em;margin-top:8px;text-transform:uppercase;}
+footer .foot-pattern{
+  width:60px;height:20px;margin:22px auto 0;opacity:.4;
+}
+
+/* ============ MUSIC TOGGLE ============ */
+.music-btn{
+  position:fixed;bottom:26px;right:26px;z-index:150;
+  width:52px;height:52px;border-radius:50%;
+  background:var(--emerald);
+  border:1px solid var(--gold-soft);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 10px 26px rgba(24,60,50,.25);
+  transition:transform .35s var(--ease);
+}
+.music-btn:hover{transform:scale(1.08);}
+.music-btn svg{width:20px;height:20px;stroke:var(--gold-soft);}
+.music-btn .bars{display:flex;align-items:flex-end;gap:2.5px;height:16px;}
+.music-btn .bars span{width:2.5px;background:var(--gold-soft);border-radius:1px;animation:eq 1s ease-in-out infinite;}
+.music-btn.playing .bars span:nth-child(1){animation-delay:0s;}
+.music-btn.playing .bars span:nth-child(2){animation-delay:.2s;}
+.music-btn.playing .bars span:nth-child(3){animation-delay:.4s;}
+.music-btn:not(.playing) .bars span{height:4px !important;animation:none;}
+@keyframes eq{0%,100%{height:4px;}50%{height:16px;}}
+
+/* focus visibility */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{
+  outline:2px solid var(--gold);outline-offset:2px;
+}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <div class="nav-logo">S <span>&amp;</span> L</div>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#journey">Our Story</a></li>
+    <li><a href="#nikkah">Nikkah</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#rsvp">RSVP</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#hero">Home</a>
+  <a href="#journey">Our Story</a>
+  <a href="#nikkah">Nikkah</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#rsvp">RSVP</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="hero">
+  <div class="geo-pattern"></div>
+  <div class="particles" id="particles"></div>
+
+  <p class="hero-bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+  <p class="hero-together">Together with their families</p>
+
+  <div class="hero-names">
+    <span class="hero-name groom">SHIBILI</span>
+    <span class="hero-heart-wrap">
+      <svg class="heart-glyph filled" viewBox="0 0 40 36" fill="none">
+        <path d="M20 34 C20 34 3 22.5 3 11.5 C3 5.5 7.7 1.5 13 1.5 C16.6 1.5 19 3.7 20 6.3 C21 3.7 23.4 1.5 27 1.5 C32.3 1.5 37 5.5 37 11.5 C37 22.5 20 34 20 34 Z"/>
+      </svg>
+    </span>
+    <span class="hero-name bride">LIYA</span>
+  </div>
+
+  <p class="hero-line">We invite you to celebrate the beginning of our forever.</p>
+
+  <div class="hero-date-block">
+    <div class="hero-date">19 • 12 • 2026</div>
+    <div class="hero-nikkah-time">Nikkah — 11:00 AM</div>
+  </div>
+
+  <div class="hero-cta">
+    <a href="#nikkah" class="btn">Nikkah Details</a>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</header>
+
+<!-- ============ COUNTDOWN ============ -->
+<section class="countdown-section">
+  <div class="geo-pattern" style="opacity:.06;filter:invert(1);"></div>
+  <div class="container reveal">
+    <p class="eyebrow">Countdown to our Nikkah</p>
+    <h2 class="countdown-title">Every moment brings us closer</h2>
+    <div class="countdown-grid" id="countdown">
+      <div class="count-unit"><div class="count-value" id="cd-days">00</div><div class="count-label">Days</div></div>
+      <div class="count-sep">:</div>
+      <div class="count-unit"><div class="count-value" id="cd-hours">00</div><div class="count-label">Hours</div></div>
+      <div class="count-sep">:</div>
+      <div class="count-unit"><div class="count-value" id="cd-min">00</div><div class="count-label">Minutes</div></div>
+      <div class="count-sep">:</div>
+      <div class="count-unit"><div class="count-value" id="cd-sec">00</div><div class="count-label">Seconds</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WELCOME ============ -->
+<section class="welcome">
+  <div class="container">
+    <p class="eyebrow reveal" style="text-align:center;">Bismillah</p>
+    <h2 class="section-heading reveal">Two Hearts. One Beautiful Beginning.</h2>
+    <div class="divider-line reveal"></div>
+    <p class="welcome-msg reveal">With the blessings of Allah and the love of our families, we begin a beautiful new chapter together.</p>
+  </div>
+</section>
+
+<!-- ============ QURAN VERSE ============ -->
+<section class="verse-section">
+  <div class="geo-pattern"></div>
+  <div class="container reveal-scale" style="position:relative;">
+    <div style="display:flex;justify-content:center;">
+      <svg class="heart-glyph" viewBox="0 0 40 36" fill="none">
+        <path d="M20 34 C20 34 3 22.5 3 11.5 C3 5.5 7.7 1.5 13 1.5 C16.6 1.5 19 3.7 20 6.3 C21 3.7 23.4 1.5 27 1.5 C32.3 1.5 37 5.5 37 11.5 C37 22.5 20 34 20 34 Z"/>
+      </svg>
+    </div>
+    <p class="verse-arabic">وَخَلَقْنَاكُمْ أَزْوَاجًا</p>
+    <p class="verse-en">"And We created you in pairs."</p>
+    <p class="verse-ref">— Qur'an 78:8</p>
+    <div class="divider-line"></div>
+  </div>
+</section>
+
+<!-- ============ JOURNEY ============ -->
+<section class="journey" id="journey">
+  <div class="container">
+    <p class="eyebrow reveal" style="text-align:center;">Our Story</p>
+    <h2 class="section-heading reveal">Our Journey</h2>
+  </div>
+  <div class="timeline" id="timeline">
+    <div class="timeline-track"></div>
+    <div class="timeline-heart">
+      <svg viewBox="0 0 40 36" fill="var(--gold)" style="filter:drop-shadow(0 4px 10px rgba(201,168,106,.5));">
+        <path d="M20 34 C20 34 3 22.5 3 11.5 C3 5.5 7.7 1.5 13 1.5 C16.6 1.5 19 3.7 20 6.3 C21 3.7 23.4 1.5 27 1.5 C32.3 1.5 37 5.5 37 11.5 C37 22.5 20 34 20 34 Z"/>
+      </svg>
+    </div>
+
+    <div class="timeline-item reveal">
+      <span class="timeline-dot"></span>
+      <p class="timeline-year">Chapter One</p>
+      <h3 class="timeline-title">The Beginning</h3>
+      <p class="timeline-text">A beautiful meeting that started a special journey.</p>
+    </div>
+    <div class="timeline-item reveal">
+      <span class="timeline-dot"></span>
+      <p class="timeline-year">Chapter Two</p>
+      <h3 class="timeline-title">The Journey</h3>
+      <p class="timeline-text">Two hearts growing closer with every moment.</p>
+    </div>
+    <div class="timeline-item reveal">
+      <span class="timeline-dot"></span>
+      <p class="timeline-year">Chapter Three</p>
+      <h3 class="timeline-title">The Promise</h3>
+      <p class="timeline-text">A promise to walk through life together.</p>
+    </div>
+    <div class="timeline-item reveal">
+      <span class="timeline-dot"></span>
+      <p class="timeline-year">Chapter Four</p>
+      <h3 class="timeline-title">The Nikkah</h3>
+      <p class="timeline-text">19 December 2026 — the beginning of our forever.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WEDDING DETAILS ============ -->
+<section class="details-section" id="nikkah">
+  <div class="geo-pattern" style="filter:invert(1);opacity:.05;"></div>
+  <div class="container">
+    <div class="details-card reveal-scale">
+      <p class="eyebrow">Join us for the</p>
+      <h2 class="details-event">Nikkah</h2>
+      <div class="details-row">
+        <div class="big">19 December 2026</div>
+        <div class="small">Saturday</div>
+      </div>
+      <div class="details-row">
+        <div class="big">11:00 AM</div>
+        <div class="small">Nikkah Ceremony</div>
+      </div>
+      <div class="details-venue">Akbar Convention Center</div>
+      <a class="map-link" id="mapLink" href="https://www.google.com/maps/search/?api=1&query=Akbar+Convention+Center" target="_blank" rel="noopener">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-7.2-7-12a7 7 0 1 1 14 0c0 4.8-7 12-7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg>
+        View Location
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COUPLE ============ -->
+<section class="couple-section">
+  <div class="container">
+    <p class="eyebrow reveal">The Couple</p>
+    <h2 class="couple-names reveal">Shibili &amp; Liya</h2>
+    <p class="couple-quote reveal">"Two souls, one journey, one beautiful forever."</p>
+    <div class="photo-frame reveal-scale">
+      <svg class="ph-icon" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#183C32" stroke-width="1.2">
+        <path d="M12 21s-7-7.2-7-12a7 7 0 1 1 14 0c0 4.8-7 12-7 12Z" opacity=".35"/>
+        <circle cx="12" cy="9" r="2.2" opacity=".35"/>
+      </svg>
+      <p>Photograph coming soon</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INVITATION MESSAGE ============ -->
+<section class="invite-section">
+  <div class="geo-pattern"></div>
+  <div class="container reveal">
+    <p class="invite-main">With joyful hearts, we invite you to join us as we begin our life together.</p>
+    <p class="invite-sub">Your presence and duas will make our day even more special.</p>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery">
+  <div class="container">
+    <p class="eyebrow reveal" style="text-align:center;">Moments</p>
+    <h2 class="section-heading reveal">Our Gallery</h2>
+    <p class="section-sub reveal" style="margin-top:14px;">Photographs from our celebration will be added here.</p>
+
+    <div class="gallery-grid stagger" id="galleryGrid"></div>
+  </div>
+</section>
+
+<!-- ============ RSVP ============ -->
+<section class="rsvp-section" id="rsvp">
+  <div class="geo-pattern" style="filter:invert(1);"></div>
+  <div class="container">
+    <p class="eyebrow reveal" style="text-align:center;">RSVP</p>
+    <h2 class="rsvp-title reveal">Will You Join Us?</h2>
+    <p class="rsvp-sub reveal">We would be honoured to celebrate this beautiful day with you.</p>
+
+    <form class="rsvp-card reveal-scale" id="rsvpForm">
+      <div class="form-row">
+        <label for="rsvp-name">Name</label>
+        <input id="rsvp-name" type="text" placeholder="Your full name" required>
+      </div>
+      <div class="form-row">
+        <label for="rsvp-guests">Number of Guests</label>
+        <input id="rsvp-guests" type="number" min="1" max="10" placeholder="e.g. 2" required>
+      </div>
+      <div class="form-row">
+        <label>Attendance</label>
+        <div class="attend-options">
+          <button type="button" class="attend-btn" data-value="accept">Joyfully Accept</button>
+          <button type="button" class="attend-btn" data-value="decline">Regretfully Decline</button>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="rsvp-message">Message</label>
+        <textarea id="rsvp-message" rows="3" placeholder="Leave a message or dua for the couple"></textarea>
+      </div>
+      <button type="submit" class="rsvp-submit">Send RSVP</button>
+      <p class="rsvp-confirm" id="rsvpConfirm">Jazakumullahu Khairan — your RSVP has been received. 🤍</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FINAL SECTION ============ -->
+<section class="final-section">
+  <div class="glow-particles" id="glowParticles"></div>
+  <h2 class="final-names">SHIBILI <span style="color:var(--gold);">♡</span> LIYA</h2>
+  <div class="final-date">19.12.2026</div>
+  <p class="final-bismillah">Forever begins with Bismillah.</p>
+  <p class="final-dua">Please remember us in your duas</p>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="foot-names">With love, Shibili &amp; Liya</div>
+  <div class="foot-date">19 December 2026</div>
+  <svg class="foot-pattern" viewBox="0 0 120 40" fill="none" stroke="#183C32" stroke-width="0.8">
+    <path d="M20 4 L36 14 L36 26 L20 36 L4 26 L4 14 Z"/>
+    <path d="M60 4 L76 14 L76 26 L60 36 L44 26 L44 14 Z"/>
+    <path d="M100 4 L116 14 L116 26 L100 36 L84 26 L84 14 Z"/>
+  </svg>
+</footer>
+
+<!-- ============ MUSIC BUTTON ============ -->
+<button class="music-btn" id="musicBtn" aria-label="Toggle background music" aria-pressed="false">
+  <div class="bars"><span></span><span></span><span></span></div>
+</button>
+<!-- Replace the src below with your own instrumental track file to enable music -->
+<audio id="bgMusic" loop preload="none">
+  <source src="audio/nikkah-theme.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+/* ---------------- Nav scroll state ---------------- */
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 40);
+}, {passive:true});
+
+/* ---------------- Mobile menu ---------------- */
+const navToggle = document.getElementById('navToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+navToggle.addEventListener('click', () => {
+  const open = navToggle.classList.toggle('open');
+  mobileMenu.classList.toggle('open', open);
+  navToggle.setAttribute('aria-expanded', open);
+});
+mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  navToggle.classList.remove('open');
+  mobileMenu.classList.remove('open');
+  navToggle.setAttribute('aria-expanded', false);
+}));
+
+/* ---------------- Scroll reveal ---------------- */
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if(e.isIntersecting){ e.target.classList.add('in-view'); io.unobserve(e.target); }
+  });
+}, {threshold:0.15});
+document.querySelectorAll('.reveal, .reveal-scale, .stagger').forEach(el => io.observe(el));
+
+/* ---------------- Floating particles (hero) ---------------- */
+const particlesEl = document.getElementById('particles');
+const PCOUNT = window.innerWidth < 700 ? 12 : 22;
+for(let i=0;i<PCOUNT;i++){
+  const p = document.createElement('div');
+  p.className = 'particle';
+  const size = 2 + Math.random()*3;
+  p.style.width = size+'px';
+  p.style.height = size+'px';
+  p.style.left = Math.random()*100+'%';
+  p.style.bottom = -20+'px';
+  p.style.animationDuration = (10 + Math.random()*10)+'s';
+  p.style.animationDelay = (Math.random()*10)+'s';
+  particlesEl.appendChild(p);
+}
+
+/* ---------------- Glow particles (final section) ---------------- */
+const glowEl = document.getElementById('glowParticles');
+for(let i=0;i<10;i++){
+  const g = document.createElement('div');
+  g.className = 'glow';
+  const size = 6 + Math.random()*14;
+  g.style.width = size+'px';
+  g.style.height = size+'px';
+  g.style.left = Math.random()*100+'%';
+  g.style.top = Math.random()*100+'%';
+  g.style.animationDelay = (Math.random()*8)+'s';
+  g.style.animationDuration = (6+Math.random()*6)+'s';
+  glowEl.appendChild(g);
+}
+
+/* ---------------- Countdown ---------------- */
+const WEDDING_DATE = new Date('2026-12-19T11:00:00');
+const els = {
+  days: document.getElementById('cd-days'),
+  hours: document.getElementById('cd-hours'),
+  min: document.getElementById('cd-min'),
+  sec: document.getElementById('cd-sec'),
+};
+function pad(n){ return String(n).padStart(2,'0'); }
+function setVal(el, val){
+  if(el.textContent !== val){
+    el.style.transform = 'translateY(-6px)';
+    el.style.opacity = '0';
+    setTimeout(()=>{
+      el.textContent = val;
+      el.style.transition = 'transform .35s ease, opacity .35s ease';
+      el.style.transform = 'translateY(0)';
+      el.style.opacity = '1';
+    }, 120);
+  }
+}
+let countdownTimer = null;
+function tickCountdown(){
+  const now = new Date();
+  const diff = WEDDING_DATE - now;
+  if(diff <= 0){
+    setVal(els.days,'00'); setVal(els.hours,'00'); setVal(els.min,'00'); setVal(els.sec,'00');
+    clearInterval(countdownTimer);
+    return;
+  }
+  const d = Math.floor(diff / (1000*60*60*24));
+  const h = Math.floor((diff / (1000*60*60)) % 24);
+  const m = Math.floor((diff / (1000*60)) % 60);
+  const s = Math.floor((diff / 1000) % 60);
+  setVal(els.days, pad(d));
+  setVal(els.hours, pad(h));
+  setVal(els.min, pad(m));
+  setVal(els.sec, pad(s));
+}
+tickCountdown();
+countdownTimer = setInterval(tickCountdown, 1000);
+
+/* ---------------- Timeline scroll heart ---------------- */
+const timelineEl = document.getElementById('timeline');
+const heartEl = document.querySelector('.timeline-heart');
+function updateTimelineHeart(){
+  const rect = timelineEl.getBoundingClientRect();
+  const vh = window.innerHeight;
+  const total = rect.height;
+  let progress = (vh*0.65 - rect.top) / total;
+  progress = Math.max(0, Math.min(1, progress));
+  heartEl.style.top = (progress*100) + '%';
+}
+window.addEventListener('scroll', updateTimelineHeart, {passive:true});
+window.addEventListener('resize', updateTimelineHeart);
+updateTimelineHeart();
+
+/* ---------------- Gallery placeholders ---------------- */
+const galleryGrid = document.getElementById('galleryGrid');
+const galleryLabels = ['Nikkah Day','Together','Our Families','Blessings','Celebration','Forever'];
+const heartPath = 'M20 34 C20 34 3 22.5 3 11.5 C3 5.5 7.7 1.5 13 1.5 C16.6 1.5 19 3.7 20 6.3 C21 3.7 23.4 1.5 27 1.5 C32.3 1.5 37 5.5 37 11.5 C37 22.5 20 34 20 34 Z';
+galleryLabels.forEach(label => {
+  const div = document.createElement('div');
+  div.className = 'gallery-item';
+  div.innerHTML = `<svg viewBox="0 0 40 36" fill="#183C32"><path d="${heartPath}"/></svg><span>${label}</span>`;
+  galleryGrid.appendChild(div);
+});
+
+/* ---------------- RSVP form ---------------- */
+const attendBtns = document.querySelectorAll('.attend-btn');
+let attendance = null;
+attendBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    attendBtns.forEach(b => b.classList.remove('selected'));
+    btn.classList.add('selected');
+    attendance = btn.dataset.value;
+  });
+});
+const rsvpForm = document.getElementById('rsvpForm');
+const rsvpConfirm = document.getElementById('rsvpConfirm');
+rsvpForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  rsvpConfirm.classList.add('show');
+  rsvpForm.querySelector('.rsvp-submit').style.display = 'none';
+  rsvpConfirm.scrollIntoView({behavior:'smooth', block:'center'});
+});
+
+/* ---------------- Music toggle ---------------- */
+const musicBtn = document.getElementById('musicBtn');
+const bgMusic = document.getElementById('bgMusic');
+let playing = false;
+musicBtn.addEventListener('click', () => {
+  if(!playing){
+    bgMusic.play().then(()=>{
+      playing = true;
+      musicBtn.classList.add('playing');
+      musicBtn.setAttribute('aria-pressed','true');
+    }).catch(()=>{
+      /* No audio source provided yet — add your track at audio/nikkah-theme.mp3 */
+      musicBtn.classList.toggle('playing');
+    });
+  } else {
+    bgMusic.pause();
+    playing = false;
+    musicBtn.classList.remove('playing');
+    musicBtn.setAttribute('aria-pressed','false');
+  }
+});
+</script>
+</body>
+</html>
